@@ -167,15 +167,10 @@ nav{
     font-family: 'Gemunu Libre', sans-serif;
   }
   .buttons {
-    /* margin-top: 2350px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
   }
   .buttons button{
     width:120px;

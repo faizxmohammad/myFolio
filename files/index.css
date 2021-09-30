@@ -81,7 +81,7 @@ nav{
   background-color: #112;
   color: beige;
 }
-.bio a{
+.bio button a{
   text-decoration: none;
   height: 40px;
   font-size: 20px;

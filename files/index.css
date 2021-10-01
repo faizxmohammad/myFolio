@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;400;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -92,6 +93,7 @@ nav{
     /* scroll-behavior: smooth; */
     font-size: 22px;
     margin: 40px 40px;
+    font-family: 'Birthstone', cursive;
 }
 #About h3{
     margin-top: 30px;
@@ -126,10 +128,30 @@ nav{
     list-style: none;
     font-size:30px ;
 }
+
+.workexp{
+  font-size: 22px;
+  margin: 40px 40px;
+}
+.workexp h2{
+  text-transform: uppercase;
+  
+}
+
+
+
+
+
+
+
+
+
+
   /*---------------------------- Contact CSS----------------------------------- */
 #Contact{
     margin: 50px;
 }
+
 #Contact h2{
   font-size: 40px;
   margin-bottom: 30px;
@@ -166,6 +188,25 @@ nav{
     width:390px;
     font-family: 'Gemunu Libre', sans-serif;
   }
+.message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.message input{
+  height:150px;
+  width:390px;
+  font-family: 'Gemunu Libre', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+
+
+
+
   .buttons {
     display: flex;
     justify-content: center;

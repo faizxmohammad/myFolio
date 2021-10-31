@@ -225,4 +225,60 @@ nav{
   }
 
   
+  @media(max-width : 480px){
 
+    
+    .nav{
+     display: flex;
+     flex-wrap: wrap;
+     margin:  auto;
+    }
+     .bio{
+      display: block;
+      margin: auto;
+     }
+     .bio h1 {
+       font-size: 23px;
+     }
+     .bio h1  pre{
+       font-size: 21px;
+     }
+     .bio img{
+         height: 250px;
+         display: block;
+         margin: auto;
+         border-radius: 45%;
+     }
+     .bio button{
+       display: block;
+       margin-bottom: auto;
+     }
+     .skills{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto ;
+        
+      }
+      .skills .lang{
+        margin-bottom: 30px;
+      }
+     
+      .skills h2 {
+        font-weight: bold;
+      }
+      .skills li{
+        font-weight: lighter;
+      }
+
+      
+  
+
+     
+
+
+
+
+  }

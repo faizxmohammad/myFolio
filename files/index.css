@@ -65,14 +65,20 @@ nav{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #777575;
+  /* color: #777575; */
   font-size: 26px;
   font-family: 'Anonymous Pro', monospace;
   border-right: 1px solid #dedede;
   white-space: nowrap;
   overflow: hidden;
-  animation: typewriter 8s steps(50) 0.5s 1 normal both,
+  /* font-size: 72px; */
+  background: -webkit-linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: typewriter 3s steps(50) 0.5s 1 normal both,
     cursorblink 0.5s infinite;
+  animation: gradient 15s ease infinite;
 }
 @keyframes typewriter {
   from {
@@ -226,18 +232,15 @@ text-transform: uppercase;
 .workExpProjects pre{
   font-family: 'Mohave', sans-serif;
 }
-
-
-.workExpProjects .commands li{
-    list-style:none;
-}
-    
 .workExpProjects a button{
   margin:30px;
   height: 40px;
   width: 90px;
   background-color: grey;
   border-radius: 5px;
+}
+.workExpProjects .commands li{
+  list-style: none;
 }
 .workExpProjects a button:hover{
 background-color: #112;
@@ -310,12 +313,13 @@ font-size: 30px;
   
   @media(max-width : 480px){
 
+
     
     .nav{
-     /* display: flex;
-     flex-wrap: wrap;
-     margin:  auto; */
-     display: none;
+     display: flex;
+     flex-direction: column;
+     /* display: none; */
+     margin-bottom: 200px;
     }
     .welcome{
       display: none;
@@ -388,11 +392,11 @@ font-size: 30px;
       .workExpProjects li{
         padding-bottom: 10px;
       }
-
-
       .workExpProjects .commands li{
-            list-style: none;
-        }
+        list-style: none;
+      }
+
+
       
   
 

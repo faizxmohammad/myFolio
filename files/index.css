@@ -226,6 +226,12 @@ text-transform: uppercase;
 .workExpProjects pre{
   font-family: 'Mohave', sans-serif;
 }
+
+
+.workExpProjects .commands li{
+    list-style:none;
+}
+    
 .workExpProjects a button{
   margin:30px;
   height: 40px;

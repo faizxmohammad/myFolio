@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;400;500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300;1,500&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gemunu Libre', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 html{
     scroll-behavior: smooth;
 }
-
 nav{
     
     display: flex;
@@ -33,20 +38,60 @@ nav{
 .nav{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 210px;
     
 }
 .nav li{
     list-style: none;
     padding: 20px;
+    text-transform: uppercase;
 }
 .nav li a{
     text-decoration: none;
     font-family: 'Gemunu Libre', sans-serif;
     color: black;
-    font-size: 20px
+    font-size: 16px
 }
 .nav li a:hover{
     color: #dedad1;
+}
+.welcome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #777575;
+  font-size: 26px;
+  font-family: 'Anonymous Pro', monospace;
+  border-right: 1px solid #dedede;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 8s steps(50) 0.5s 1 normal both,
+    cursorblink 0.5s infinite;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  
+  to {
+    width: 13.5em;
+  }
+}
+
+@keyframes cursorblink {
+  from {
+    border-right: 1px solid #dedede;
+  }
+  
+  to {
+    border-right: 1px solid #666;
+  }
 }
 .bio{
     margin: 250px;
@@ -77,11 +122,22 @@ nav{
   width: 90px;
   background-color: grey;
   border-radius: 5px;
+
 }
 .bio button:hover{
-  background-color: #112;
-  color: beige;
+
+  animation-name: example;
+  animation-duration: 5s;
 }
+@keyframes example {
+  from {background-color: grey;}
+  to {background-color: #112;}
+}
+
+
+
+
+
 .bio button a{
   text-decoration: none;
   height: 40px;
@@ -143,11 +199,44 @@ text-transform: uppercase;
 }
 .workexp h2{
   text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
   
 }
 
+.workExpProjects p , pre{
+
+  font-size: 20px;
+  margin: 20px;
+  display: flex;
+
+  
 
 
+}
+.workExpProjects p  > i{
+  padding: 0 0 0 12px ;
+  font-size: 30px;
+  
+}
+.workExpProjects a {
+  margin: 130px 102px 301px 110px;
+
+}
+
+.workExpProjects pre{
+  font-family: 'Mohave', sans-serif;
+}
+.workExpProjects a button{
+  margin:30px;
+  height: 40px;
+  width: 90px;
+  background-color: grey;
+  border-radius: 5px;
+}
+.workExpProjects a button:hover{
+background-color: #112;
+color: beige;
+}
 
 
 
@@ -172,6 +261,12 @@ align-self: center;
 letter-spacing: 20px;
 font-size: 30px;
 
+}
+#Contact .connect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 
@@ -216,9 +311,13 @@ font-size: 30px;
      margin:  auto; */
      display: none;
     }
+    .welcome{
+      display: none;
+    }
      .bio{
+  
       display: block;
-      margin: auto;
+      margin:auto;
      }
      .bio h1 {
        font-size: 23px;
@@ -255,7 +354,35 @@ font-size: 30px;
       .skills li{
         font-weight: lighter;
       }
-      
+      #About h3{
+        font-size: 20px;
+      }
+      .tech h2{
+        font-size: 20px;
+        padding-bottom: 10px;
+        text-transform: capitalize;
+      }
+      .tech li{
+        font-size: 20px;
+      }
+      .lang h2{
+        font-size: 20px;
+        padding-bottom: 20px;
+        text-transform: capitalize;
+      }
+      .lang li{
+        font-size: 20px;
+      }
+      .workexp h2{
+        font-size: 20px;
+      }
+      .workExpProjects .info-1{
+        line-height: 20px;
+      }
+      .workExpProjects li{
+        padding-bottom: 10px;
+      }
+
 
       
   
